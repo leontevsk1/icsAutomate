@@ -1,0 +1,6 @@
+# Игнорировать файлы с секретами
+dbconfig.py
+.env
+secrets/
+*.key
+__pycache__
