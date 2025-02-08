@@ -8,6 +8,8 @@ from setDB import last_date
 from getICS import download
 import asyncio
 import webbrowser
+import uploadInCalendar
+import KMP
 
 if last_date:
     current_datetime = last_date[0][0]
@@ -18,9 +20,10 @@ else:
     query = f"INSERT INTO date(date) VALUES ('{current_datetime}')"
     setDB.execute_query(conn,query)
     conn.close()
-    
+   
+current_dtstart_format = current_datetime.strftime("%Y-%m-%d")
 
-current_dtstart_format = current_datetime.strftime("%Y%m%d")
+# Функция записи в ics файл
 def ICSCreator(arr):
     path = filedialog.askdirectory()  # Получаем путь, куда сохранять файлы
     if path != "":
@@ -31,28 +34,8 @@ def ICSCreator(arr):
                 my_file.write(c)  # Записываем все символы (переносы строк, пробелы и слова)
     
     print(f"Файлы сохранены в: {path}")
-def prefix(s):
-    v = [0] * len(s)
-    for i in range(1, len(s)):
-        k = v[i - 1]
-        while k > 0 and s[k] != s[i]:
-            k = v[k - 1]
-        if s[k] == s[i]:
-            k += 1
-        v[i] = k
-    return v
-
-def kmp(s, t):
-    f = prefix(s)
-    k = 0
-    for i in range(len(t)):
-        while k > 0 and s[k] != t[i]:
-            k = f[k - 1]
-        if s[k] == t[i]:
-            k += 1
-        if k == len(s):
-            return True  # Substring found
-    return False  # Substring not found
+    return path
+    
 
 asyncio.run(download())
 
@@ -118,13 +101,14 @@ found = False
 for index, block in enumerate(events_list):
     for line in block:
         # Проверяем, начинается ли строка с "DTSTART;" и содержит ли текущую дату
-        if line.startswith("DTSTART;") and kmp(current_dtstart_format, line):
+        if line.startswith("DTSTART;") and KMP.kmp(current_dtstart_format, line):
             # Как только находим первый блок, соответствующий дате, фиксируем его индекс
             final_list = events_list[index:]
             found = True
             break
     if found:
         break  # Выходим из внешнего цикла, если нужное событие найдено
+
 
 conn = setDB.create_connection(setDB.host, setDB.user,setDB.pword,setDB.db_name)
 query = f"UPDATE date SET date = '{formatted_date}'"
@@ -133,6 +117,13 @@ conn.close()
    
 res = "\n".join("\n".join(event) for event in final_list)
 res = f"{calendar_fragment}\n"+f"{res}\n"+"END:VCALENDAR"
-ICSCreator(res)
+path = ICSCreator(res)
+service = uploadInCalendar.get_calendar_service()
+events = uploadInCalendar.parse_ics(f'{path}/{current_dtstart_format}.ics')
+#print(f'{path}/{current_dtstart_format}')
+try:
+    uploadInCalendar.upload_to_gcal(service, 'primary', events)
+except ValueError as e:
+    print(f'Возникла ошибка: {e}')
 os.remove('C:/Users/artem/Документы/MyPy/2129441347.ics')
-webbrowser.open('https://calendar.google.com/calendar/u/0/r/settings/export')
+#webbrowser.open('https://calendar.google.com/calendar/u/0/r/settings/export')
