@@ -1,0 +1,5 @@
+user_secr.py
+===========
+
+This file is used to store sensitive information such as API keys, passwords, and other secrets. It is not included in the repository for security reasons. To use this file, you need to create it in the same directory as this file and add the following information:
+
