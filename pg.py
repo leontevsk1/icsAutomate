@@ -19,9 +19,16 @@ def create_connection(secrets):
 def execute_query(conn, query):
     cursor = conn.cursor()
     cursor.execute(query)
+    result = cursor.fetchone()
     conn.commit()
     cursor.close()
-    return(cursor)
+    return result
+
+def insert_query(conn,query):
+    cursor =conn.cursor()
+    cursor.execute(query)
+    conn.commit()
+    cursor.close()
 
 def close_connection(conn):
     conn.close()
@@ -30,4 +37,5 @@ def close_connection(conn):
 if __name__ == '__main__':
     secr = s()
     f = create_connection(secr)
+    print(execute_query(f,'SELECT * FROM date')[0])
     close_connection(f)   
