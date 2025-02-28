@@ -30,9 +30,6 @@ def get_last_date():
     pg.close_connection(conn)
     
     datetime_ics = datetime.datetime.combine(last_date[0], datetime.time(0,0,0), tzinfo=datetime.timezone.utc)
-    #ics_format_date = datetime_with_time.strftime('%Y-%m-%dT%H:%M:%S%z')
-    # Добавляем временную зону (UTC)
-    #ics_format_date += '+07:00'
     return datetime_ics
 
 
