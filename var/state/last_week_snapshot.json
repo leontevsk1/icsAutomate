@@ -1,0 +1,314 @@
+[
+  {
+    "summary": "09:40 пр.з. Элективные дисциплины по физической культуре и спорту (с-з Соц. пр-т)",
+    "start": {
+      "dateTime": "2025-09-09T09:40:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-09T11:10:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Новичихина Е.В. (доц.)",
+    "location": "с-з Соц. пр-т"
+  },
+  {
+    "summary": "13:20 лек. Современные проблемы информатики и вычислительной техники (500К)",
+    "start": {
+      "dateTime": "2025-09-09T13:20:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-09T14:50:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Скурыдин Ю.Г. (доц.)",
+    "location": "500К"
+  },
+  {
+    "summary": "15:00 пр.з. Искусство ведения переговоров (317К)",
+    "start": {
+      "dateTime": "2025-09-09T15:00:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-09T16:30:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Московкина Е.А. (доц.)",
+    "location": "317К"
+  },
+  {
+    "summary": "11:20 пр.з. Базовая архитектура программного обеспечения (416К)",
+    "start": {
+      "dateTime": "2025-09-10T11:20:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-10T12:50:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Сеулеков А.В. (преп.)",
+    "location": "416К"
+  },
+  {
+    "summary": "13:20 пр.з. Базовая архитектура программного обеспечения (416К)",
+    "start": {
+      "dateTime": "2025-09-10T13:20:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-10T14:50:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Сеулеков А.В. (преп.)",
+    "location": "416К"
+  },
+  {
+    "summary": "15:00 пр.з. Численные методы (416К)",
+    "start": {
+      "dateTime": "2025-09-10T15:00:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-10T16:30:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Иордан В.И. (доц.)",
+    "location": "416К"
+  },
+  {
+    "summary": "09:40 лаб. Алгоритмы и методы машинного обучения (203К)",
+    "start": {
+      "dateTime": "2025-09-11T09:40:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-11T11:10:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Калачев  А.В. (доц.)",
+    "location": "203К"
+  },
+  {
+    "summary": "11:20 лаб. Алгоритмы и методы машинного обучения (203К)",
+    "start": {
+      "dateTime": "2025-09-11T11:20:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-11T12:50:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Калачев  А.В. (доц.)",
+    "location": "203К"
+  },
+  {
+    "summary": "13:20 лаб. Алгоритмы и методы машинного обучения (203К)",
+    "start": {
+      "dateTime": "2025-09-11T13:20:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-11T14:50:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Калачев  А.В. (доц.)",
+    "location": "203К"
+  },
+  {
+    "summary": "15:00 лаб. Алгоритмы и методы машинного обучения (203К)",
+    "start": {
+      "dateTime": "2025-09-11T15:00:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-11T16:30:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Калачев  А.В. (доц.)",
+    "location": "203К"
+  },
+  {
+    "summary": "11:20 пр.з. Элективные дисциплины по физической культуре и спорту (Лыж.база)",
+    "start": {
+      "dateTime": "2025-09-12T11:20:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-12T12:50:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Новичихина Е.В. (доц.)",
+    "location": "Лыж.база"
+  },
+  {
+    "summary": "16:40 лек. Безопасность жизнедеятельности ()",
+    "start": {
+      "dateTime": "2025-09-12T16:40:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-12T18:10:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Харнутова Е.П. (доц.)",
+    "location": ""
+  },
+  {
+    "summary": "09:40 лаб. Виртуализация и облачные технологии (203К)",
+    "start": {
+      "dateTime": "2025-09-13T09:40:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-13T11:10:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Шмаков ИГОРЬ.А. (преп.)",
+    "location": "203К"
+  },
+  {
+    "summary": "09:40 лаб. Программирование глубоких нейронных сетей (209К)",
+    "start": {
+      "dateTime": "2025-09-13T09:40:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-13T11:10:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Белозерских В.В. (ст.пр.)",
+    "location": "209К"
+  },
+  {
+    "summary": "11:20 лаб. Виртуализация и облачные технологии (203К)",
+    "start": {
+      "dateTime": "2025-09-13T11:20:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-13T12:50:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Шмаков ИГОРЬ.А. (преп.)",
+    "location": "203К"
+  },
+  {
+    "summary": "11:20 лаб. Программирование глубоких нейронных сетей (209К)",
+    "start": {
+      "dateTime": "2025-09-13T11:20:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-13T12:50:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Белозерских В.В. (ст.пр.)",
+    "location": "209К"
+  },
+  {
+    "summary": "16:40 лек. Безопасность жизнедеятельности ()",
+    "start": {
+      "dateTime": "2025-09-13T16:40:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-13T18:10:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Харнутова Е.П. (доц.)",
+    "location": ""
+  },
+  {
+    "summary": "18:20 лек. Безопасность жизнедеятельности ()",
+    "start": {
+      "dateTime": "2025-09-13T18:20:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-13T19:50:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Харнутова Е.П. (доц.)",
+    "location": ""
+  },
+  {
+    "summary": "11:20 лек. Виртуализация и облачные технологии (500К)",
+    "start": {
+      "dateTime": "2025-09-15T11:20:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-15T12:50:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Шмаков ИГОРЬ.А. (преп.)",
+    "location": "500К"
+  },
+  {
+    "summary": "13:20 лаб. Виртуализация и облачные технологии (203К)",
+    "start": {
+      "dateTime": "2025-09-15T13:20:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-15T14:50:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Шмаков ИГОРЬ.А. (преп.)",
+    "location": "203К"
+  },
+  {
+    "summary": "13:20 лаб. Программирование глубоких нейронных сетей (209К)",
+    "start": {
+      "dateTime": "2025-09-15T13:20:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-15T14:50:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Белозерских В.В. (ст.пр.)",
+    "location": "209К"
+  },
+  {
+    "summary": "15:00 лаб. Виртуализация и облачные технологии (203К)",
+    "start": {
+      "dateTime": "2025-09-15T15:00:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-15T16:30:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Шмаков ИГОРЬ.А. (преп.)",
+    "location": "203К"
+  },
+  {
+    "summary": "15:00 лаб. Программирование глубоких нейронных сетей (209К)",
+    "start": {
+      "dateTime": "2025-09-15T15:00:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-15T16:30:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Белозерских В.В. (ст.пр.)",
+    "location": "209К"
+  },
+  {
+    "summary": "18:20 лек. Безопасность жизнедеятельности ()",
+    "start": {
+      "dateTime": "2025-09-15T18:20:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "end": {
+      "dateTime": "2025-09-15T19:50:00",
+      "timeZone": "Asia/Barnaul"
+    },
+    "description": "Харнутова Е.П. (доц.)",
+    "location": ""
+  }
+]

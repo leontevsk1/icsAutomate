@@ -1,3 +1,4 @@
+.env/
 user_secr.py
 token.json
 credentials.json
