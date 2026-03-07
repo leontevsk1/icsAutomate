@@ -10,51 +10,25 @@ markdown
 - Синхронизирует календарь:
   - режим **full** — удаляет все события недели и заливает заново;
   - режим **diff** — проверяет изменения, при необходимости перезаливает неделю.
-
-## Структура проекта
-
-
-.
-├── requirements.txt
-├── src/
-│   ├── app/                 # код утилиты
-│   │   ├── config.py
-│   │   ├── loader.py
-│   │   ├── parser.py
-│   │   ├── comparator.py
-│   │   ├── integrator.py
-│   │   └── main.py
-│   └── data/                # Google API ключи/токены
-│       ├── credentials.json
-│       └── token.json
-└── var/                     # артефакты выполнения
-├── tmp/
-│   └── raw\.ics
-├── state/
-│   └── last\_week\_snapshot.json
-└── logs/
-└── cron.log
-
-````
-
 ## Установка
-1. Клонировать проект:
+1. Клонировать:
+
    ```bash
    git clone https://github.com/yourname/ics-sync.git
    cd ics-sync
-````
+   ```
 
-2. Установить зависимости:
+3. Установить зависимости:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Получить `credentials.json` в [Google Cloud Console](https://console.cloud.google.com/)
+4. Получить `credentials.json` в [Google Cloud Console](https://console.cloud.google.com/)
    (тип приложения — **Desktop App**, включён Calendar API).
    Сохранить в `src/data/credentials.json`.
 
-4. На первом запуске откроется окно браузера для авторизации. После неё создастся `src/data/token.json`.
+5. На первом запуске откроется окно браузера для авторизации. После неё создастся `src/data/token.json`.
 
 ## Использование
 
@@ -114,21 +88,4 @@ crontab -e
 
 # каждое воскресенье в 21:00 — пересборка недели
 0 21 * * 0 icsync full >> /home/artem/dev/ics/IcsScriptPG/var/logs/cron.log 2>&1
-```
-
-## Примечания
-
-* `credentials.json` не коммитится! Держи его локально.
-* Если нужно поменять календарь — укажи `CALENDAR_ID` в `.env` или через переменные окружения.
-* В `parser.py` можно указать свой `timeZone` (например, `"Asia/Barnaul"`).
-
----
-
-✍️ Этот README — базовый каркас. Можешь дописать сюда: скриншоты календаря, нюансы установки в Linux/Windows, или раздел FAQ (например, про ошибки `invalid_grant` и `Missing time zone definition`).
-
-```
-
----
-
-Хочешь, я добавлю в README ещё раздел “Отладка” с типичными ошибками и их решениями (типа тех, что мы уже прошли: `invalid_grant`, `400 Bad Request` и пр.)?
 ```
